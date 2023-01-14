@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<script src="Week12JS.js"></script>
+<link rel="stylesheet" href="Week12css.css">
+
+<head>
+    <h1><center>
+        <video width="320" height="200" autoplay muted>
+        <source src="Lavell.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+      <video width="320" height="200" autoplay muted>
+        <source src="Dennis.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+      <video width="320" height="200" autoplay muted>
+        <source src="Den.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+    </h1></center>
+    <title>
+        Fighter Entry Page
+    </title>
+</head>
+
+<body>
+
+	<h1><center>Fighter Entry Page</center></h1>
+	<hr>
+			<div class="fighter-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Email Id</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Height(inches)</label>
+                        <input type="text" name="height" id="height">
+                    </div>
+                    <div>
+                        <label>Weight(lbs)</label>
+                        <input type="text" name="weight" id="weight">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "fighters-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Email Id</th>
+                            <th>Height(inches)</th>
+                            <th>Weight(lbs)</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+</body>
+</html>
